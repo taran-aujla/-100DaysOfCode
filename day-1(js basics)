@@ -1,0 +1,110 @@
+/*
+let x = 'new into it';
+console.log(x)
+console.log(4+1+1+4);
+console.log('taran')
+console.log(32)
+
+let  country = 'India'
+let  continent='Asia'
+let population= '150'
+console.log(country,continent,population)
+*/
+//data types
+/*
+true
+console.log(true)
+let usingBool = true
+console.log(usingBool)
+console.log(typeof usingBool)
+console.log(typeof true)
+console.log(typeof 23)
+console.log(typeof 'taran')
+usingBool=23
+console.log(typeof usingBool)
+let undef
+console.log(undef)
+console.log(typeof undef)
+console.log(typeof null)
+*/
+
+//let,var(nan),const
+/*
+ let age = 30
+ age = 31
+ console.log(age)
+ const doee = 1102003
+ console.log(doee)
+var e = 'rr'
+console.log(e)
+*/
+
+//basic operators
+/*
+const current = 2023
+const agetaran = current - 2003
+const ageballu = current - 2004
+console.log(agetaran,ageballu)
+ 
+console.log(agetaran*2,agetaran/2,agetaran**2,agetaran+2)
+let firstName = 'taran'
+let lastName = ' singh'
+console.log(firstName+lastName)
+*/
+
+//challenge-1
+/*
+let massMark= 78
+let heightMark= 1.69
+
+let massJohn= 92
+let heightJohn= 1.95
+
+let BMIMark = massMark/ (heightMark * heightMark)
+let BMIJohn = massJohn/ (heightJohn * heightJohn)
+
+console.log(BMIMark,BMIJohn)
+let markHigherBMI=(BMIMark>BMIJohn)
+console.log(markHigherBMI)
+*/
+//strings and template strings
+/*
+const Name = 'Taran'
+const sentance = "I'm"+Name+'with age of'+20
+console.log(sentance)
+const sentance1= `I'm ${Name}`
+console.log(sentance1)
+console.log(`a
+b
+c`)
+*/
+//chellange-2
+/*
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.95;
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI=(BMIMark>BMIJohn)
+
+
+
+if (markHigherBMI) {
+
+    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn}) !`)
+}
+
+else{
+
+    console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark}) !`)
+}
+*/
+//type conversion and coercion
+const year = '2003'
+const date = 11
+console.log(Number(year),year )
+console.log(String(date))
+console.log('hello '+'date '+ 1)
+console.log("10"-1)

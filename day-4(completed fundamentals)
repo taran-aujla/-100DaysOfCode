@@ -1,0 +1,150 @@
+//objects
+/*
+const student_info = {
+    firstName : 'taran',
+    lastName : 'aujla',
+    Roll_no : 195,
+    Batch : '3nc8',
+    Friends  : ['r','k','s','b']
+}
+
+console.log(student_info)
+
+console.log(student_info.firstName)//dot
+console.log(student_info['firstName'])//bracket
+
+const key = 'Name'
+console.log(student_info['first'+key])
+console.log(student_info['last'+key])
+
+const choice = prompt(`choose any key from (firstNmae,lastName,Roll_no,Batch,Friends)`)
+console.log(student_info.choice)
+console.log(student_info[choice])
+
+if(student_info[choice])
+{
+    console.log(`soln for choice ${student_info[choice]}`)
+}
+else
+{
+    console.log('refresh and refill')
+}
+//to input into the object use
+student_info.weight=85
+student_info['location']='panjab'
+console.log(student_info['location'])
+*/
+//objects methods
+/*
+const info = {
+    name : 'taran',
+    roll_no : 195,
+    year : 2003,
+    calcage : function(year){
+        return 2030 - year
+    }
+}
+console.log(info.calcage(2003))
+
+//using (this) keyword
+const info_new = {
+    name  : 'taran',
+    roll_no : 195,
+    year : 2003,
+    calcage : function(){
+        console.log(this)
+        return 2030 - this.year
+    }
+}
+console.log(info_new.calcage())
+*/
+
+//challenge question 
+/*
+const mark = {
+    fullName : 'Mark Miller',
+    mass : 78,
+    height : 1.69,
+    calcBMI : function(){
+        this.bmi =  (this.mass)/((this.height)*(this.height))
+        return this.bmi
+    }
+      
+}
+
+const john= {
+    fullName :'John Smith',
+    mass : 92,
+    height : 1.95,
+    calcBMI : function(){
+        this.bmi =  (this.mass)/((this.height)*(this.height))
+        return this.bmi
+    }
+    
+}
+mark.calcBMI()
+john.calcBMI()
+
+mark.calcBMI()>john.calcBMI()?console.log(`John Smith's BMI (${john.bmi}) is higher than Mark Miller's (${mark.bmi})!`):console.log(`Mark Miller's BMI (${mark.bmi}) is higher than John Smith's (${john.bmi})!`)
+*/
+/*
+for(let i=1;i<11;i++)
+{
+    console.log(`day-${i}`)
+}
+
+const info_array =[
+    'taran',
+    'aujla',
+    195,
+    ['r','t','k','s']
+]
+for(let i=0;i<info_array.length;i++)
+{
+    console.log(`at location ${i} there is ${info_array[i]} and its tyoe is ${typeof info_array[i]}`)
+}
+*/
+//continue in for loop is used with if statement majorly
+/*
+const x = [
+    'taran',
+    'aujla',
+    195,
+    true,
+    ['s','r','t','k']
+]
+for(let i = 0;i<x.length;i++)
+{
+    if(typeof x[i] !== 'string')continue
+    console.log(x[i],typeof x[i])
+}
+//breaking
+for(let i = 0;i<x.length;i++)
+{
+    if(typeof x[i] === 'number')break
+    console.log(x[i],typeof x[i])
+}
+*/
+//while using random number
+/*
+let dice = Math.trunc(Math.random()*6)+1
+
+while(dice!==6)
+{
+    console.log(`rolled a ${dice}`)
+    dice = Math.trunc(Math.random()*6)+1
+}
+*/
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+
+const calcAverage = function(bills){
+    let neww = 0
+    for(let i=0;i<bills.length;i++)
+    {
+        neww += bills[i]
+    }
+    const x  = neww/(bills.length)
+    return x
+}
+const y =calcAverage(bills) 
+console.log(y)

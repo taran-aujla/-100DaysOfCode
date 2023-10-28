@@ -1,0 +1,29 @@
+// Remember, we're gonna use strict mode in all scripts now!
+/*
+const temp = [12, 14, -2, 1, 0, 'error', -45];
+const mathOn_temp = function (y) {
+  let x = temp[0];
+  for (let i = 0; i < temp.length; i++) {
+    if (temp[i] > x) x = temp[i];
+  }
+  return x;
+};
+console.log(mathOn_temp(temp));
+//merging two arrays
+const arr1 = [1, 2, 3, 4];
+const arr2 = [11, 22, 33, 44];
+const arr3 = arr1.concat(arr2);
+console.log(arr3);
+*/
+//challenge
+const printForecast = function (arr) {
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str = str + ` ...${arr[i]} in ${i + 1} days`;
+  }
+  console.log(str + `...`);
+};
+const arr1 = [17, 21, 23];
+printForecast(arr1);
+const arr2 = [12, 5, -5, 0, 4];
+printForecast(arr2);
